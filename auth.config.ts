@@ -17,6 +17,7 @@ export const authConfig: AuthOptions = {
         login: {},
         password: {},
       },
+      // @ts-expect-error library restriction
       async authorize(credentials) {
         if (!credentials) {
           return null;
@@ -41,7 +42,6 @@ export const authConfig: AuthOptions = {
             };
           }
         }
-
         return null;
       },
     }),

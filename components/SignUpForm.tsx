@@ -1,17 +1,8 @@
 "use client";
 
 import { actionSignUp } from "@/actions/user";
-import { signIn } from "next-auth/react";
 import { redirect } from "next/navigation";
 import { useForm } from "react-hook-form";
-
-const formDataToObject = (formData: FormData) => {
-  return formData.keys().reduce((res: Record<string, string>, key) => {
-    res[key] = formData.get(key) as string;
-
-    return res;
-  }, {});
-};
 
 type Inputs = {
   login: string;

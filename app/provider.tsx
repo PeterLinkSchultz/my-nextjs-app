@@ -7,6 +7,6 @@ import { PropsWithChildren } from "react";
 export default function Provider({
   children,
   session,
-}: PropsWithChildren & { session: Session }) {
+}: PropsWithChildren & { session: Session | null }) {
   return <SessionProvider session={session}>{children}</SessionProvider>;
 }

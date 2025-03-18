@@ -24,7 +24,7 @@ export default async function actionWithUser<T>(
   } catch (e) {
     return {
       success: false,
-      error: e.message,
+      error: (e as { message: string }).message,
     };
   }
 }

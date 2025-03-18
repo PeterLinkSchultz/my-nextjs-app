@@ -3,7 +3,6 @@ import z from "zod";
 import { PromptTemplate } from "@langchain/core/prompts";
 import { StructuredOutputParser } from "@langchain/core/output_parsers";
 import { ChatOpenAI } from "@langchain/openai";
-import { Analysis } from "@prisma/client";
 
 const parser = StructuredOutputParser.fromZodSchema(
   z.object({
