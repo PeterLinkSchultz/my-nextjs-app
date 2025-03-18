@@ -1,0 +1,9 @@
+services:
+  sqlite-container:
+    image: keinos/sqlite3
+    container_name: sqlite-container
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
