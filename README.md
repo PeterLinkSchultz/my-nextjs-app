@@ -57,9 +57,9 @@ OPENAI_API_KEY="your-api-key"
 After setting up SQLite, apply Prisma scheme:
 
 ```sh
-npm run db:migrate
+npm run db:push
 # or
-yarn db:migrate
+yarn db:push
 ```
 
 If neccessary apply Prisma migarations:

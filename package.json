@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest",
-    "db:generate": "npx prisma generate",
+    "db:push": "npx prisma db push",
     "db:migrate": "npx prisma migrate dev",
     "test:watch": "vitest --watch"
   },
