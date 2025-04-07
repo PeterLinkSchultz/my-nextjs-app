@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest",
+    "db:generate": "npx prisma generate",
+    "db:migrate": "npx prisma migrate dev",
     "test:watch": "vitest --watch"
   },
   "dependencies": {
